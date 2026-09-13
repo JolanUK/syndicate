@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\PlayerArchetypes\Schemas;
+namespace App\Filament\Resources\Players\Resources\PlayerArchetypes\Schemas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\PlayerArchetypes;
+namespace App\Filament\Resources\Players\Resources\PlayerArchetypes;
 
-use App\Filament\Resources\PlayerArchetypes\Pages\CreatePlayerArchetype;
-use App\Filament\Resources\PlayerArchetypes\Pages\EditPlayerArchetype;
-use App\Filament\Resources\PlayerArchetypes\Pages\ListPlayerArchetypes;
-use App\Filament\Resources\PlayerArchetypes\Pages\ViewPlayerArchetype;
-use App\Filament\Resources\PlayerArchetypes\Schemas\PlayerArchetypeForm;
-use App\Filament\Resources\PlayerArchetypes\Schemas\PlayerArchetypeInfolist;
-use App\Filament\Resources\PlayerArchetypes\Tables\PlayerArchetypesTable;
+use App\Filament\Resources\Players\PlayerResource;
+use App\Filament\Resources\Players\Resources\PlayerArchetypes\Pages\CreatePlayerArchetype;
+use App\Filament\Resources\Players\Resources\PlayerArchetypes\Pages\EditPlayerArchetype;
+use App\Filament\Resources\Players\Resources\PlayerArchetypes\Pages\ViewPlayerArchetype;
+use App\Filament\Resources\Players\Resources\PlayerArchetypes\Schemas\PlayerArchetypeForm;
+use App\Filament\Resources\Players\Resources\PlayerArchetypes\Schemas\PlayerArchetypeInfolist;
+use App\Filament\Resources\Players\Resources\PlayerArchetypes\Tables\PlayerArchetypesTable;
 use App\Models\PlayerArchetype;
 use BackedEnum;
 use Filament\Resources\Resource;
@@ -21,6 +21,8 @@ class PlayerArchetypeResource extends Resource
     protected static ?string $model = PlayerArchetype::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+
+    protected static ?string $parentResource = PlayerResource::class;
 
     protected static ?string $recordTitleAttribute = 'name';
 
@@ -49,7 +51,6 @@ class PlayerArchetypeResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListPlayerArchetypes::route('/'),
             'create' => CreatePlayerArchetype::route('/create'),
             'view' => ViewPlayerArchetype::route('/{record}'),
             'edit' => EditPlayerArchetype::route('/{record}/edit'),

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\PlayerArchetypes\Pages;
+namespace App\Filament\Resources\Players\Resources\PlayerArchetypes\Pages;
 
-use App\Filament\Resources\PlayerArchetypes\PlayerArchetypeResource;
+use App\Filament\Resources\Players\Resources\PlayerArchetypes\PlayerArchetypeResource;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreatePlayerArchetype extends CreateRecord

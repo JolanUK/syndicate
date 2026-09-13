@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\PlayerArchetypes\Pages;
+namespace App\Filament\Resources\Players\Pages;
 
-use App\Filament\Resources\PlayerArchetypes\PlayerArchetypeResource;
+use App\Filament\Resources\Players\PlayerResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditPlayerArchetype extends EditRecord
+class EditPlayer extends EditRecord
 {
-    protected static string $resource = PlayerArchetypeResource::class;
+    protected static string $resource = PlayerResource::class;
 
     protected function getHeaderActions(): array
     {
