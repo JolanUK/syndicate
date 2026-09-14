@@ -7,11 +7,13 @@ use App\Filament\Resources\Players\Pages\EditPlayer;
 use App\Filament\Resources\Players\Pages\ListPlayers;
 use App\Filament\Resources\Players\Pages\ViewPlayer;
 use App\Filament\Resources\Players\RelationManagers\ClassesRelationManager;
+use App\Filament\Resources\Players\Resources\PlayerClasses\Pages\ViewPlayerClasses;
 use App\Filament\Resources\Players\Schemas\PlayerForm;
 use App\Filament\Resources\Players\Schemas\PlayerInfolist;
 use App\Filament\Resources\Players\Tables\PlayersTable;
 use App\Models\Player;
 use BackedEnum;
+use Filament\Resources\Pages\Page;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
@@ -54,5 +56,12 @@ class PlayerResource extends Resource
             'view' => ViewPlayer::route('/{record}'),
             'edit' => EditPlayer::route('/{record}/edit'),
         ];
+    }
+
+    public static function getRecordSubNavigation(Page $page): array
+    {
+        return $page->generateNavigationItems([
+            ViewPlayerClasses::class,
+        ]);
     }
 }

@@ -24,6 +24,8 @@ class PlayerClassesResource extends Resource
 
     protected static ?string $parentResource = PlayerResource::class;
 
+    protected static ?string $slug = 'classes';
+
     public static function form(Schema $schema): Schema
     {
         return PlayerClassesForm::configure($schema);

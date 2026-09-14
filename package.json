@@ -7,6 +7,8 @@
         "dev": "vp dev"
     },
     "dependencies": {
+        "@deck.gl/core": "^9.4.0",
+        "@deck.gl/layers": "^9.4.0",
         "@laravel/passkeys": "^0.2.0",
         "@tailwindcss/vite": "^4.1.11",
         "concurrently": "^10.0.3",
