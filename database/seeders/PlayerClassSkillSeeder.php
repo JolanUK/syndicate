@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\ClassSkill;
+use App\Models\PlayerClassSkill;
 use Illuminate\Database\Seeder;
 
-class ClassSkillSeeder extends Seeder
+class PlayerClassSkillSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -86,7 +86,7 @@ class ClassSkillSeeder extends Seeder
         ];
 
         foreach ($skills as $skill) {
-            ClassSkill::create([
+            PlayerClassSkill::create([
                 'name' => $skill['name'],
                 'description' => $skill['description'],
             ]);

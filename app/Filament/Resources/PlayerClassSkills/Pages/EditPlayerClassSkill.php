@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\ClassSkills\Pages;
+namespace App\Filament\Resources\PlayerClassSkills\Pages;
 
-use App\Filament\Resources\ClassSkills\ClassSkillResource;
+use App\Filament\Resources\PlayerClassSkills\PlayerClassSkillResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditClassSkill extends EditRecord
+class EditPlayerClassSkill extends EditRecord
 {
-    protected static string $resource = ClassSkillResource::class;
+    protected static string $resource = PlayerClassSkillResource::class;
 
     protected function getHeaderActions(): array
     {

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreClassSkillRequest;
-use App\Http\Requests\UpdateClassSkillRequest;
-use App\Models\ClassSkill;
+use App\Http\Requests\StorePlayerClassSkillRequest;
+use App\Http\Requests\UpdatePlayerClassSkillRequest;
+use App\Models\PlayerClassSkill;
 
-class ClassSkillController extends Controller
+class PlayerClassSkillController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class ClassSkillController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreClassSkillRequest $request)
+    public function store(StorePlayerClassSkillRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class ClassSkillController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ClassSkill $classSkill)
+    public function show(PlayerClassSkill $playerPlayerClassSkill)
     {
         //
     }
@@ -43,7 +43,7 @@ class ClassSkillController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ClassSkill $classSkill)
+    public function edit(PlayerClassSkill $playerPlayerClassSkill)
     {
         //
     }
@@ -51,7 +51,7 @@ class ClassSkillController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateClassSkillRequest $request, ClassSkill $classSkill)
+    public function update(UpdatePlayerClassSkillRequest $request, PlayerClassSkill $playerPlayerClassSkill)
     {
         //
     }
@@ -59,7 +59,7 @@ class ClassSkillController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ClassSkill $classSkill)
+    public function destroy(PlayerClassSkill $playerPlayerClassSkill)
     {
         //
     }

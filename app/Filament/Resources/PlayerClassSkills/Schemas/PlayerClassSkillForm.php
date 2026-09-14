@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Filament\Resources\ClassSkills\Schemas;
+namespace App\Filament\Resources\PlayerClassSkills\Schemas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 
-class ClassSkillForm
+class PlayerClassSkillForm
 {
     public static function configure(Schema $schema): Schema
     {

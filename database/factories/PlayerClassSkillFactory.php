@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\ClassSkill;
+use App\Models\PlayerClassSkill;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<ClassSkill>
+ * @extends Factory<PlayerClassSkill>
  */
-class ClassSkillFactory extends Factory
+class PlayerClassSkillFactory extends Factory
 {
     /**
      * Define the model's default state.

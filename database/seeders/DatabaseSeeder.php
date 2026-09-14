@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
-            ClassSkillSeeder::class,
+            PlayerClassSkillSeeder::class,
         ]);
     }
 }

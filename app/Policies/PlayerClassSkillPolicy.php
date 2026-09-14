@@ -2,10 +2,10 @@
 
 namespace App\Policies;
 
-use App\Models\ClassSkill;
+use App\Models\PlayerClassSkill;
 use App\Models\User;
 
-class ClassSkillPolicy
+class PlayerClassSkillPolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -18,7 +18,7 @@ class ClassSkillPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, ClassSkill $classSkill): bool
+    public function view(User $user, PlayerClassSkill $playerPlayerClassSkill): bool
     {
         return true;
     }
@@ -34,7 +34,7 @@ class ClassSkillPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, ClassSkill $classSkill): bool
+    public function update(User $user, PlayerClassSkill $playerPlayerClassSkill): bool
     {
         return true;
     }
@@ -42,7 +42,7 @@ class ClassSkillPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, ClassSkill $classSkill): bool
+    public function delete(User $user, PlayerClassSkill $playerPlayerClassSkill): bool
     {
         return false;
     }
@@ -50,7 +50,7 @@ class ClassSkillPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, ClassSkill $classSkill): bool
+    public function restore(User $user, PlayerClassSkill $playerPlayerClassSkill): bool
     {
         return false;
     }
@@ -58,7 +58,7 @@ class ClassSkillPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, ClassSkill $classSkill): bool
+    public function forceDelete(User $user, PlayerClassSkill $playerPlayerClassSkill): bool
     {
         return false;
     }
