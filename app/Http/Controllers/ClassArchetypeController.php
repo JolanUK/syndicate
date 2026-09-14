@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePlayerArchetypeRequest;
-use App\Http\Requests\UpdatePlayerArchetypeRequest;
-use App\Models\PlayerArchetype;
+use App\Http\Requests\StoreClassArchetypeRequest;
+use App\Http\Requests\UpdateClassArchetypeRequest;
+use App\Models\ClassArchetype;
 
-class PlayerArchetypeController extends Controller
+class ClassArchetypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class PlayerArchetypeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePlayerArchetypeRequest $request)
+    public function store(StoreClassArchetypeRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class PlayerArchetypeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(PlayerArchetype $playerArchetype)
+    public function show(ClassArchetype $classArchetype)
     {
         //
     }
@@ -43,7 +43,7 @@ class PlayerArchetypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(PlayerArchetype $playerArchetype)
+    public function edit(ClassArchetype $classArchetype)
     {
         //
     }
@@ -51,7 +51,7 @@ class PlayerArchetypeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePlayerArchetypeRequest $request, PlayerArchetype $playerArchetype)
+    public function update(UpdateClassArchetypeRequest $request, ClassArchetype $classArchetype)
     {
         //
     }
@@ -59,7 +59,7 @@ class PlayerArchetypeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(PlayerArchetype $playerArchetype)
+    public function destroy(ClassArchetype $classArchetype)
     {
         //
     }

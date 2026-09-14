@@ -6,6 +6,7 @@ use App\Filament\Resources\Players\Pages\CreatePlayer;
 use App\Filament\Resources\Players\Pages\EditPlayer;
 use App\Filament\Resources\Players\Pages\ListPlayers;
 use App\Filament\Resources\Players\Pages\ViewPlayer;
+use App\Filament\Resources\Players\RelationManagers\ClassesRelationManager;
 use App\Filament\Resources\Players\Schemas\PlayerForm;
 use App\Filament\Resources\Players\Schemas\PlayerInfolist;
 use App\Filament\Resources\Players\Tables\PlayersTable;
@@ -41,6 +42,7 @@ class PlayerResource extends Resource
     {
         return [
             //
+            ClassesRelationManager::class,
         ];
     }
 

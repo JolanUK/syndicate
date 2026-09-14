@@ -8,6 +8,6 @@ class SettingName extends Settings
 {
     public static function group(): string
     {
-        return 'PlayerArchetypes';
+        return 'ClassArchetypes';
     }
 }

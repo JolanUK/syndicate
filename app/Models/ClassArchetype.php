@@ -2,12 +2,12 @@
 
 namespace App\Models;
 
-use Database\Factories\PlayerArchetypeFactory;
+use Database\Factories\ClassArchetypeFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PlayerArchetype extends Model
+class ClassArchetype extends Model
 {
-    /** @use HasFactory<PlayerArchetypeFactory> */
+    /** @use HasFactory<ClassArchetypeFactory> */
     use HasFactory;
 }

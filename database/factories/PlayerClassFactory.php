@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\PlayerArchetype;
+use App\Models\PlayerClass;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<PlayerArchetype>
+ * @extends Factory<PlayerClass>
  */
-class PlayerArchetypeFactory extends Factory
+class PlayerClassFactory extends Factory
 {
     /**
      * Define the model's default state.
