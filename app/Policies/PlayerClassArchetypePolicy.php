@@ -2,10 +2,10 @@
 
 namespace App\Policies;
 
-use App\Models\ClassArchetype;
+use App\Models\PlayerClassArchetype;
 use App\Models\User;
 
-class ClassArchetypePolicy
+class PlayerClassArchetypePolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -18,7 +18,7 @@ class ClassArchetypePolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, ClassArchetype $classArchetype): bool
+    public function view(User $user, PlayerClassArchetype $playerPlayerClassArchetype): bool
     {
         return true;
     }
@@ -34,7 +34,7 @@ class ClassArchetypePolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, ClassArchetype $classArchetype): bool
+    public function update(User $user, PlayerClassArchetype $playerPlayerClassArchetype): bool
     {
         return false;
     }
@@ -42,7 +42,7 @@ class ClassArchetypePolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, ClassArchetype $classArchetype): bool
+    public function delete(User $user, PlayerClassArchetype $playerPlayerClassArchetype): bool
     {
         return false;
     }
@@ -50,7 +50,7 @@ class ClassArchetypePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, ClassArchetype $classArchetype): bool
+    public function restore(User $user, PlayerClassArchetype $playerPlayerClassArchetype): bool
     {
         return false;
     }
@@ -58,7 +58,7 @@ class ClassArchetypePolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, ClassArchetype $classArchetype): bool
+    public function forceDelete(User $user, PlayerClassArchetype $playerPlayerClassArchetype): bool
     {
         return false;
     }

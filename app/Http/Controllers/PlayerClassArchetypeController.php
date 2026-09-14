@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreClassArchetypeRequest;
-use App\Http\Requests\UpdateClassArchetypeRequest;
-use App\Models\ClassArchetype;
+use App\Http\Requests\StorePlayerClassArchetypeRequest;
+use App\Http\Requests\UpdatePlayerClassArchetypeRequest;
+use App\Models\PlayerClassArchetype;
 
-class ClassArchetypeController extends Controller
+class PlayerClassArchetypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class ClassArchetypeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreClassArchetypeRequest $request)
+    public function store(StorePlayerClassArchetypeRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class ClassArchetypeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ClassArchetype $classArchetype)
+    public function show(PlayerClassArchetype $playerPlayerClassArchetype)
     {
         //
     }
@@ -43,7 +43,7 @@ class ClassArchetypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ClassArchetype $classArchetype)
+    public function edit(PlayerClassArchetype $playerPlayerClassArchetype)
     {
         //
     }
@@ -51,7 +51,7 @@ class ClassArchetypeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateClassArchetypeRequest $request, ClassArchetype $classArchetype)
+    public function update(UpdatePlayerClassArchetypeRequest $request, PlayerClassArchetype $playerPlayerClassArchetype)
     {
         //
     }
@@ -59,7 +59,7 @@ class ClassArchetypeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ClassArchetype $classArchetype)
+    public function destroy(PlayerClassArchetype $playerPlayerClassArchetype)
     {
         //
     }

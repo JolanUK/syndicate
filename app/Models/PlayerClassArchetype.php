@@ -2,13 +2,13 @@
 
 namespace App\Models;
 
-use Database\Factories\ClassArchetypeFactory;
+use Database\Factories\PlayerClassArchetypeFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ClassArchetype extends Model
+class PlayerClassArchetype extends Model
 {
-    /** @use HasFactory<ClassArchetypeFactory> */
+    /** @use HasFactory<PlayerClassArchetypeFactory> */
     use HasFactory;
 
     protected $fillable = [

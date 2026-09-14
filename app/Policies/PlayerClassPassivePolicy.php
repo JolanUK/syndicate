@@ -2,25 +2,25 @@
 
 namespace App\Policies;
 
-use App\Models\ClassSkill;
+use App\Models\PlayerClassPassive;
 use App\Models\User;
 
-class ClassSkillPolicy
+class PlayerClassPassivePolicy
 {
     /**
      * Determine whether the user can view any models.
      */
     public function viewAny(User $user): bool
     {
-        return true;
+        return false;
     }
 
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, ClassSkill $classSkill): bool
+    public function view(User $user, PlayerClassPassive $playerClassPassive): bool
     {
-        return true;
+        return false;
     }
 
     /**
@@ -28,21 +28,21 @@ class ClassSkillPolicy
      */
     public function create(User $user): bool
     {
-        return true;
+        return false;
     }
 
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, ClassSkill $classSkill): bool
+    public function update(User $user, PlayerClassPassive $playerClassPassive): bool
     {
-        return true;
+        return false;
     }
 
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, ClassSkill $classSkill): bool
+    public function delete(User $user, PlayerClassPassive $playerClassPassive): bool
     {
         return false;
     }
@@ -50,7 +50,7 @@ class ClassSkillPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, ClassSkill $classSkill): bool
+    public function restore(User $user, PlayerClassPassive $playerClassPassive): bool
     {
         return false;
     }
@@ -58,7 +58,7 @@ class ClassSkillPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, ClassSkill $classSkill): bool
+    public function forceDelete(User $user, PlayerClassPassive $playerClassPassive): bool
     {
         return false;
     }

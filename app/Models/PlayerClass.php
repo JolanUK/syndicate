@@ -19,6 +19,6 @@ class PlayerClass extends Model
 
     public function archetype(): BelongsTo
     {
-        return $this->belongsTo(ClassArchetype::class);
+        return $this->belongsTo(PlayerClassArchetype::class);
     }
 }

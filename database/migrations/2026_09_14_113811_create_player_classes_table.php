@@ -17,11 +17,11 @@ return new class extends Migration
                 ->constrained()
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->foreignId('class_archetype_id')
+            $table->foreignId('player_class_archetype_id')
                 ->constrained()
                 ->onUpdate('cascade')
                 ->onDelete('restrict');
-            $table->unique(['player_id', 'class_archetype_id']);
+            $table->unique(['player_id', 'player_class_archetype_id']);
             $table->timestamps();
         });
     }

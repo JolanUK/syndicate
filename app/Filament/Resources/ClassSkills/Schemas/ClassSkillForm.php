@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Filament\Resources\ClassArchetypes\Schemas;
+namespace App\Filament\Resources\ClassSkills\Schemas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 
-class ClassArchetypeForm
+class ClassSkillForm
 {
     public static function configure(Schema $schema): Schema
     {
