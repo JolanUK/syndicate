@@ -2,17 +2,16 @@
 
 namespace App\Models;
 
-use Database\Factories\ClassArchetypeFactory;
+use Database\Factories\ClassSkillFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ClassArchetype extends Model
+class ClassSkill extends Model
 {
-    /** @use HasFactory<ClassArchetypeFactory> */
+    /** @use HasFactory<ClassSkillFactory> */
     use HasFactory;
 
     protected $fillable = [
         'name',
-        'image',
     ];
 }
