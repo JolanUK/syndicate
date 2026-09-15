@@ -14,5 +14,13 @@ class PlayerClassArchetype extends Model
     protected $fillable = [
         'name',
         'image',
+        'passives',
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'passives' => 'array',
+        ];
+    }
 }

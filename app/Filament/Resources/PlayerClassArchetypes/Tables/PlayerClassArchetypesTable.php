@@ -2,10 +2,12 @@
 
 namespace App\Filament\Resources\PlayerClassArchetypes\Tables;
 
+use App\Models\PlayerClassSkill;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -15,8 +17,26 @@ class PlayerClassArchetypesTable
     {
         return $table
             ->columns([
+                ImageColumn::make('image')
+                    ->extraImgAttributes([
+                        'loading' => 'lazy',
+                    ]),
                 TextColumn::make('name')
                     ->searchable(),
+                TextColumn::make('passives')
+                    ->listWithLineBreaks()
+                    ->state(function ($record) {
+                        $result = [];
+
+                        foreach ($record->passives as $passive) {
+                            $class = PlayerClassSkill::where('id', $passive['class'])->value('name');
+                            $modifier = $passive['modifier'];
+                            $result[] = "{$class}: {$modifier}";
+                        }
+
+                        return $result;
+                    })
+                    ->bulleted(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

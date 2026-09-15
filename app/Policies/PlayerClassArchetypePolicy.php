@@ -36,7 +36,7 @@ class PlayerClassArchetypePolicy
      */
     public function update(User $user, PlayerClassArchetype $playerPlayerClassArchetype): bool
     {
-        return false;
+        return true;
     }
 
     /**
