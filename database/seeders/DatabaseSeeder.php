@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             PlayerClassSkillSeeder::class,
+            PlayerClassArchetypeSeeder::class,
         ]);
     }
 }
