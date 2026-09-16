@@ -13,6 +13,11 @@ class Player extends Model
     /** @use HasFactory<PlayerFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'experience',
+    ];
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -21,5 +26,10 @@ class Player extends Model
     public function classes(): HasMany
     {
         return $this->hasMany(PlayerClass::class);
+    }
+
+    public function missions(): HasMany
+    {
+        return $this->hasMany(Mission::class);
     }
 }
