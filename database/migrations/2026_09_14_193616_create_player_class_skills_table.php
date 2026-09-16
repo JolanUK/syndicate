@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('player_class_skills', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('label');
             $table->string('description');
             $table->timestamps();
         });

@@ -13,5 +13,6 @@ class PlayerClassSkill extends Model
 
     protected $fillable = [
         'name',
+        'label',
     ];
 }

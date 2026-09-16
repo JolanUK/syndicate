@@ -17,6 +17,8 @@ class PlayerClassSkillsTable
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
+                TextColumn::make('label')
+                    ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
