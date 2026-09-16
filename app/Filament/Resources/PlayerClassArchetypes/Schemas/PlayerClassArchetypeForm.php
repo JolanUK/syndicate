@@ -25,6 +25,7 @@ class PlayerClassArchetypeForm
                 Repeater::make('passives')
                     ->columnSpanFull()
                     ->label('Passives')
+                    ->live()
                     ->schema([
                         Select::make('class')
                             ->options(PlayerClassSkill::pluck('name', 'id'))

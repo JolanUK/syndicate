@@ -23,16 +23,15 @@ class PlayerClassArchetypesTable
                     ]),
                 TextColumn::make('name')
                     ->searchable(),
+                TextColumn::make('label')
+                    ->searchable(),
                 TextColumn::make('passives')
                     ->listWithLineBreaks()
                     ->state(function ($record) {
                         $result = [];
 
                         if ($record->passives) {
-                            $record->passives = json_decode($record->passives);
-
                             foreach ($record->passives as $passive) {
-
                                 // TODO: it may be wise to set a colour for plus and minus modifiers
                                 $class = PlayerClassSkill::where('id', $passive['class'])->value('name');
                                 $modifier = $passive['modifier'];

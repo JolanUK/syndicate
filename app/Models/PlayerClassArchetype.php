@@ -13,6 +13,7 @@ class PlayerClassArchetype extends Model
 
     protected $fillable = [
         'name',
+        'label',
         'image',
         'passives',
     ];

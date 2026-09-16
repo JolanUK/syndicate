@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('player_class_archetypes', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
+            $table->string('label');
             $table->string('image')->nullable();
             $table->json('passives')->nullable();
             $table->timestamps();
